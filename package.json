@@ -1,0 +1,43 @@
+{
+  "name": "indonesian-news-category-classifier",
+  "version": "2.0.1",
+  "description": "Classify category of an Indonesian news.",
+  "homepage": "anpandu.com",
+  "repository": "anpandu/indonesian-news-category-classifier",
+  "author": {
+    "name": "Pandu",
+    "email": "anpandumail@gmail.com",
+    "url": "anpandu.com"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "machine learning",
+    "natural language processing",
+    "indonesian",
+    "news",
+    "category",
+    "classifier",
+    "bahasa",
+    "indonesia",
+    "berita"
+  ],
+  "scripts": {
+    "test": "mocha --recursive",
+    "mocha": "mocha --recursive --no-timeouts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.3.1",
+    "jsonfile": "^2.2.3",
+    "lodash": "^4.3.0",
+    "nalapa": "^1.9.2",
+    "node-svm": "^2.1.7"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}
