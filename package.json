@@ -1,9 +1,9 @@
 {
-  "name": "indonesian-news-category-classifier",
-  "version": "2.0.1",
-  "description": "Classify category of an Indonesian news.",
+  "name": "text-classification",
+  "version": "0.0.1",
+  "description": "Classify label of a text.",
   "homepage": "anpandu.com",
-  "repository": "anpandu/indonesian-news-category-classifier",
+  "repository": "anpandu/text-classification",
   "author": {
     "name": "Pandu",
     "email": "anpandumail@gmail.com",
@@ -15,14 +15,7 @@
   "main": "lib/index.js",
   "keywords": [
     "machine learning",
-    "natural language processing",
-    "indonesian",
-    "news",
-    "category",
-    "classifier",
-    "bahasa",
-    "indonesia",
-    "berita"
+    "natural language processing"
   ],
   "scripts": {
     "test": "mocha --recursive",
