@@ -16,6 +16,6 @@ describe('Classifier', function () {
   it('classify', function () {
     var scores = [ [ '2', 0 ], [ '0', 0 ], [ '1', 0 ] ]
     var result = Classifier.classify(scores)
-    assert(_.isEqual(result, '0'))
+    assert(_.isEqual(result, '2'))
   })
 })
