@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Classify sentiment of a text.",
   "homepage": "anpandu.com",
-  "repository": "anpandu/text-classification",
+  "repository": "anpandu/indonesian-text-sentiment-classifier",
   "author": {
     "name": "Pandu",
     "email": "anpandumail@gmail.com",
