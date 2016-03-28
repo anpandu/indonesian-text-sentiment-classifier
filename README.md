@@ -14,6 +14,8 @@ $ npm install --save indonesian-text-sentiment-classifier
 
 ## Usage
 
+on development
+
 ```js
 ```
 
