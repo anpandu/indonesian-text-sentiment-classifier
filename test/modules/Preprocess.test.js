@@ -16,6 +16,13 @@ describe('Preprocess', function () {
   })
 
   it('getToken', function () {
+    var text = '@asdasd #asdasd Kapal feri Sea Prince yang mengangkut sebanyak http://asd.zxc https://asd.zxc'
+    var answer = 'Kapal feri Sea Prince yang mengangkut sebanyak'
+    var tokens = Preprocess.cleanText(text)
+    assert(_.isEqual(answer, tokens))
+  })
+
+  it('getToken', function () {
     var text = 'Kapal feri Sea Prince yang mengangkut sebanyak 100 orang dari Singapura menuju Indonesia tenggelam di Batam'
     var answer = ['kapal','feri','sea','prince','mengangkut','orang','singapura','indonesia','tenggelam','batam']
     var tokens = Preprocess.getToken(text)
