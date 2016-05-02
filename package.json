@@ -1,6 +1,6 @@
 {
   "name": "indonesian-text-sentiment-classifier",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Classify sentiment of a text.",
   "homepage": "anpandu.com",
   "repository": "anpandu/indonesian-text-sentiment-classifier",
