@@ -33,13 +33,13 @@ describe('Preprocess', function () {
     var text = 'Southampton - Liverpool menang besar kala bertandang ke Southampton di babak kelima Piala Liga Inggris. Tertinggal lebih dahulu, Liverpool bikin 6 gol balasan di mana Divock Origi mencetak hat-trick dan Daniel Sturridge dua gol.'
     var tokens = Preprocess.getToken(text)
     var scores = Preprocess.getScores(tokens)
-    var answer = [["0",0],["1",1],["2",0]]
+    var answer = [ [ 'neutral', 0 ], [ 'positive', 0 ], [ 'negative', 0 ] ]
     assert(_.isEqual(answer, scores))
   })
 
   it('process', function () {
     var text = 'Kapal feri Sea Prince yang mengangkut sebanyak 100 orang dari Singapura menuju Indonesia tenggelam di Batam'
-    var answer = {"text":"Kapal feri Sea Prince yang mengangkut sebanyak 100 orang dari Singapura menuju Indonesia tenggelam di Batam","scores":[["0",0],["1",0],["2",0]]}
+    var answer = {"text":"Kapal feri Sea Prince yang mengangkut sebanyak 100 orang dari Singapura menuju Indonesia tenggelam di Batam","scores":[["neutral",0.4981607416758289],["positive",0.501839258324171],["negative",0]]}
     var result = Preprocess.process(text)
     assert(_.isEqual(answer, result))
   })
